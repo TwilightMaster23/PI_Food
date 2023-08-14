@@ -52,7 +52,7 @@ const recipeById = async (id) => {
     if(id.toString().length < 8) {
         // const recipeAPI = await recipesApi();
         const {data: recipeAPI} = await axios(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`)
-
+        console.log(recipeAPI.id);
         const dataApi = {
                 id: recipeAPI.id,
                 name: recipeAPI.title,

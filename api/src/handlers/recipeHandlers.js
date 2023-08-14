@@ -37,8 +37,4 @@ const createRecipe = async (req, res) => {
     }
 }
 
-const getDiets = async (req, res) => {
-    
-}
-
 module.exports = { getRecipeById, getRecipeByName, createRecipe };

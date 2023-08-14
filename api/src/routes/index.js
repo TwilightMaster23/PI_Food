@@ -10,7 +10,7 @@ const router = Router();
 
 router.get('/recipes/:id', getRecipeById);
 router.get('/recipes', getRecipeByName);
-router.post('/recipes', createRecipe);
+router.post('/recipes/create', createRecipe);
 router.get('/diets', getAllDiets);
 
 
